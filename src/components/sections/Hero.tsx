@@ -9,7 +9,7 @@ import { HERO_CONTENT } from "@/lib/constants";
 
 const cardIcons: Record<string, React.ReactNode> = {
   frameworks: (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square">
+    <svg width="40" height="40" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square">
       <rect x="4" y="4" width="8" height="8" rx="1" />
       <rect x="16" y="4" width="8" height="8" rx="1" />
       <rect x="4" y="16" width="8" height="8" rx="1" />
@@ -17,14 +17,14 @@ const cardIcons: Record<string, React.ReactNode> = {
     </svg>
   ),
   prompts: (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square">
+    <svg width="40" height="40" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square">
       <polyline points="8,10 12,14 8,18" />
       <line x1="14" y1="18" x2="20" y2="18" />
       <rect x="3" y="3" width="22" height="22" rx="2" />
     </svg>
   ),
   fidelity: (
-    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square">
+    <svg width="40" height="40" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square">
       <circle cx="14" cy="14" r="10" />
       <polyline points="10,14 13,17 18,11" />
     </svg>
@@ -48,7 +48,7 @@ export function Hero() {
         <div className="w-[800px] h-[800px] rounded-full bg-crimson animate-glow-pulse blur-[120px] -mt-40" />
       </div>
 
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center pt-20">
+      <div className="relative z-10 mx-auto max-w-5xl px-6 text-center pt-20">
         <FadeInUp delay={0}>
           <Badge>{HERO_CONTENT.badge}</Badge>
         </FadeInUp>
@@ -80,17 +80,17 @@ export function Hero() {
         <FadeInUp delay={0.8}>
           <motion.div
             style={{ scale: cardScale, opacity: cardOpacity }}
-            className="mt-16 mb-24 grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto"
+            className="mt-20 mb-32 grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto"
           >
             {HERO_CONTENT.cards.map((card) => (
               <div
                 key={card.label}
-                className="flex flex-col items-center justify-center p-6 md:p-8 rounded-xl bg-gradient-to-br from-crimson-dark/30 to-surface-elevated border border-crimson/20 hover:border-crimson/40 transition-all duration-500 hover:shadow-[0_0_40px_rgba(139,26,43,0.15)] aspect-square"
+                className="flex flex-col items-center justify-center p-10 md:p-12 rounded-2xl bg-surface-elevated border border-crimson/20 hover:border-crimson/40 transition-all duration-500 hover:shadow-[0_0_40px_rgba(139,26,43,0.15)] aspect-square"
               >
-                <div className="text-crimson-light mb-4">
+                <div className="text-crimson-light mb-5">
                   {cardIcons[card.icon]}
                 </div>
-                <span className="text-cream text-xs md:text-sm font-heading font-medium uppercase tracking-wider text-center leading-tight">
+                <span className="text-cream text-sm md:text-base font-heading font-semibold uppercase tracking-wider text-center leading-tight">
                   {card.label}
                 </span>
               </div>

@@ -40,7 +40,7 @@ export function StaggerChildren({
       className={className}
     >
       {Children.map(children, (child) => (
-        <motion.div variants={childVariants}>{child}</motion.div>
+        <motion.div variants={childVariants} className="h-full">{child}</motion.div>
       ))}
     </motion.div>
   );
