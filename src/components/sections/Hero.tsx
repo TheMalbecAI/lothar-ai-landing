@@ -38,7 +38,7 @@ export function Hero() {
     offset: ["start start", "end start"],
   });
 
-  const cardScale = useTransform(scrollYProgress, [0, 0.5], [1, 1.8]);
+  const cardScale = useTransform(scrollYProgress, [0, 0.5], [1, 1.15]);
   const cardOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 1]);
 
   return (
@@ -80,7 +80,7 @@ export function Hero() {
         <FadeInUp delay={0.8}>
           <motion.div
             style={{ scale: cardScale, opacity: cardOpacity }}
-            className="mt-20 mb-40 flex items-center justify-center gap-6 md:gap-10"
+            className="mt-20 mb-40 flex items-center justify-center gap-3 md:gap-5"
           >
             {/* Left card — tilted left */}
             <div className="w-52 h-52 md:w-72 md:h-72 rounded-2xl bg-surface-elevated border border-crimson/20 -rotate-6 flex flex-col items-center justify-center transition-all duration-500 hover:border-crimson/40 hover:shadow-[0_0_40px_rgba(139,26,43,0.15)]">
