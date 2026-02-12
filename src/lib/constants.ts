@@ -55,7 +55,7 @@ export const FEATURES = [
   {
     title: "100% Product Fidelity",
     description:
-      "Your exact bottle, label, and branding reproduced with precision in every single ad. Not an approximation. Your actual product, naturally integrated into every scene.",
+      "Your exact product, label, and branding reproduced with precision in every single ad. Not an approximation. Your actual product, naturally integrated into every scene.",
     icon: "product",
   },
   {
