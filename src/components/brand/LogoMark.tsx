@@ -10,30 +10,30 @@ export function LogoMark({
   return (
     <svg
       width={size}
-      height={size * 1.25}
-      viewBox="0 0 64 80"
+      height={size}
+      viewBox="0 0 64 64"
       fill="none"
       stroke={color}
-      strokeWidth="3"
+      strokeWidth="2.5"
       strokeLinecap="square"
       strokeLinejoin="miter"
       className={className}
       aria-hidden="true"
     >
-      {/* Central vertical stave */}
-      <line x1="32" y1="4" x2="32" y2="76" />
-      {/* Tiwaz arrowhead (top) */}
-      <line x1="32" y1="4" x2="16" y2="22" />
-      <line x1="32" y1="4" x2="48" y2="22" />
-      {/* Algiz branches (upper-mid) */}
-      <line x1="32" y1="28" x2="12" y2="12" />
-      <line x1="32" y1="28" x2="52" y2="12" />
-      {/* Ansuz angular strokes (mid-section) */}
-      <line x1="32" y1="36" x2="18" y2="48" />
-      <line x1="32" y1="36" x2="46" y2="48" />
-      {/* Grounding strokes (lower) */}
-      <line x1="32" y1="62" x2="18" y2="76" />
-      <line x1="32" y1="62" x2="46" y2="76" />
+      {/* Outer diamond */}
+      <polygon points="32,4 58,32 32,60 6,32" />
+      {/* Inner diamond */}
+      <polygon points="32,16 46,32 32,48 18,32" />
+      {/* Cardinal bridges */}
+      <line x1="32" y1="4" x2="32" y2="16" />
+      <line x1="58" y1="32" x2="46" y2="32" />
+      <line x1="32" y1="60" x2="32" y2="48" />
+      <line x1="6" y1="32" x2="18" y2="32" />
+      {/* Outward L-hooks — equal margin from both diamond edges */}
+      <polyline points="22,18 16,18 16,24" />
+      <polyline points="42,18 48,18 48,24" />
+      <polyline points="22,46 16,46 16,40" />
+      <polyline points="42,46 48,46 48,40" />
     </svg>
   );
 }

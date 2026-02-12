@@ -32,26 +32,27 @@ export default async function Image() {
           }}
         />
 
-        {/* Rune mark SVG inline */}
+        {/* Shield Knot mark */}
         <svg
-          width="80"
+          width="100"
           height="100"
-          viewBox="0 0 64 80"
+          viewBox="0 0 64 64"
           fill="none"
           stroke="#8B1A2B"
-          strokeWidth="3"
+          strokeWidth="2.5"
           strokeLinecap="square"
           strokeLinejoin="miter"
         >
-          <line x1="32" y1="4" x2="32" y2="76" />
-          <line x1="32" y1="4" x2="16" y2="22" />
-          <line x1="32" y1="4" x2="48" y2="22" />
-          <line x1="32" y1="28" x2="12" y2="12" />
-          <line x1="32" y1="28" x2="52" y2="12" />
-          <line x1="32" y1="36" x2="18" y2="48" />
-          <line x1="32" y1="36" x2="46" y2="48" />
-          <line x1="32" y1="62" x2="18" y2="76" />
-          <line x1="32" y1="62" x2="46" y2="76" />
+          <polygon points="32,4 58,32 32,60 6,32" />
+          <polygon points="32,16 46,32 32,48 18,32" />
+          <line x1="32" y1="4" x2="32" y2="16" />
+          <line x1="58" y1="32" x2="46" y2="32" />
+          <line x1="32" y1="60" x2="32" y2="48" />
+          <line x1="6" y1="32" x2="18" y2="32" />
+          <polyline points="22,18 16,18 16,24" />
+          <polyline points="42,18 48,18 48,24" />
+          <polyline points="22,46 16,46 16,40" />
+          <polyline points="42,46 48,46 48,40" />
         </svg>
 
         <div
