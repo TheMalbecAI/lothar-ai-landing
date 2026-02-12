@@ -38,8 +38,8 @@ export function Hero() {
     offset: ["start start", "end start"],
   });
 
-  const cardScale = useTransform(scrollYProgress, [0, 0.4], [0.85, 1]);
-  const cardOpacity = useTransform(scrollYProgress, [0, 0.3], [0.6, 1]);
+  const cardScale = useTransform(scrollYProgress, [0, 0.5], [1, 1.8]);
+  const cardOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 1]);
 
   return (
     <section ref={sectionRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -76,15 +76,15 @@ export function Hero() {
           </div>
         </FadeInUp>
 
-        {/* Hero visual — fanned poker-deck cards */}
+        {/* Hero visual — fanned poker-deck cards that scale up on scroll */}
         <FadeInUp delay={0.8}>
           <motion.div
             style={{ scale: cardScale, opacity: cardOpacity }}
-            className="mt-16 mb-32 flex items-center justify-center"
+            className="mt-20 mb-40 flex items-center justify-center gap-6 md:gap-10"
           >
             {/* Left card — tilted left */}
-            <div className="w-44 h-44 md:w-56 md:h-56 rounded-xl bg-gradient-to-br from-crimson-dark/40 to-surface-elevated border border-crimson/20 -rotate-6 flex flex-col items-center justify-center -mr-6 md:-mr-8 transition-all duration-500 hover:border-crimson/40 hover:shadow-[0_0_40px_rgba(139,26,43,0.15)]">
-              <div className="text-crimson-light mb-3">
+            <div className="w-52 h-52 md:w-72 md:h-72 rounded-2xl bg-surface-elevated border border-crimson/20 -rotate-6 flex flex-col items-center justify-center transition-all duration-500 hover:border-crimson/40 hover:shadow-[0_0_40px_rgba(139,26,43,0.15)]">
+              <div className="text-crimson-light mb-4">
                 {cardIcons[HERO_CONTENT.cards[0].icon]}
               </div>
               <span className="text-cream text-xs md:text-sm font-heading font-semibold uppercase tracking-wider text-center leading-tight px-4">
@@ -93,8 +93,8 @@ export function Hero() {
             </div>
 
             {/* Center card — larger, elevated */}
-            <div className="w-52 h-52 md:w-64 md:h-64 rounded-xl bg-gradient-to-br from-crimson/20 to-surface-elevated border border-crimson/30 z-10 flex flex-col items-center justify-center shadow-[0_0_60px_rgba(139,26,43,0.2)] transition-all duration-500 hover:border-crimson/40">
-              <div className="text-crimson-light mb-3">
+            <div className="w-60 h-60 md:w-80 md:h-80 rounded-2xl bg-surface-elevated border border-crimson/30 z-10 flex flex-col items-center justify-center shadow-[0_0_60px_rgba(139,26,43,0.2)] transition-all duration-500 hover:border-crimson/40">
+              <div className="text-crimson-light mb-4">
                 {cardIcons[HERO_CONTENT.cards[1].icon]}
               </div>
               <span className="text-cream text-sm md:text-base font-heading font-semibold uppercase tracking-wider text-center leading-tight px-4">
@@ -103,8 +103,8 @@ export function Hero() {
             </div>
 
             {/* Right card — tilted right */}
-            <div className="w-44 h-44 md:w-56 md:h-56 rounded-xl bg-gradient-to-br from-surface-elevated to-crimson-dark/40 border border-crimson/20 rotate-6 flex flex-col items-center justify-center -ml-6 md:-ml-8 transition-all duration-500 hover:border-crimson/40 hover:shadow-[0_0_40px_rgba(139,26,43,0.15)]">
-              <div className="text-crimson-light mb-3">
+            <div className="w-52 h-52 md:w-72 md:h-72 rounded-2xl bg-surface-elevated border border-crimson/20 rotate-6 flex flex-col items-center justify-center transition-all duration-500 hover:border-crimson/40 hover:shadow-[0_0_40px_rgba(139,26,43,0.15)]">
+              <div className="text-crimson-light mb-4">
                 {cardIcons[HERO_CONTENT.cards[2].icon]}
               </div>
               <span className="text-cream text-xs md:text-sm font-heading font-semibold uppercase tracking-wider text-center leading-tight px-4">
