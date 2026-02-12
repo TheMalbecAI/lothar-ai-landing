@@ -1,4 +1,4 @@
-export const CALENDLY_URL = "https://calendly.com/lothar-ai/demo";
+export const BOOKING_URL = "https://calendar.app.google/oeb4R6arnw8BVPUg9";
 
 export const HERO_CONTENT = {
   badge: "AI-Powered Ad Generation",

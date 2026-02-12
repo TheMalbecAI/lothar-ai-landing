@@ -2,7 +2,7 @@
 
 import { FadeInUp } from "../animations/FadeInUp";
 import { Button } from "../ui/Button";
-import { DEMO_CONTENT, CALENDLY_URL, CONTACT_EMAIL } from "@/lib/constants";
+import { DEMO_CONTENT, BOOKING_URL, CONTACT_EMAIL } from "@/lib/constants";
 
 export function BookDemo() {
   return (
@@ -25,7 +25,7 @@ export function BookDemo() {
             <Button
               variant="primary"
               size="lg"
-              href={CALENDLY_URL}
+              href={BOOKING_URL}
               className="shadow-[0_0_40px_rgba(139,26,43,0.3)]"
             >
               Book a Call
