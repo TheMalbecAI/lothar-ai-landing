@@ -111,6 +111,8 @@ export const DIFFERENTIATORS = [
   },
 ];
 
+export const CONTACT_EMAIL = "info@lotharai.com";
+
 export const DEMO_CONTENT = {
   label: "GET STARTED",
   heading: "See Lothar AI in Action",

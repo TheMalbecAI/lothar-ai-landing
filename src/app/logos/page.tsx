@@ -2,446 +2,429 @@ export default function LogoShowcase() {
   return (
     <div className="min-h-screen bg-surface p-8 md:p-16">
       <h1 className="text-3xl md:text-5xl font-heading font-bold text-cream text-center mb-4">
-        Logo Options — Fresh Start
+        Logo Options — Round 5
       </h1>
       <p className="text-cream-muted text-center mb-16 max-w-xl mx-auto">
-        10 completely new directions. No rules, no Norse-only constraint.
-        Bold fills, lettermarks, abstract shapes, modern tech energy.
-        Pick a number (1-10) or describe what catches your eye.
+        Clean, premium, modern. Think Linear, Stripe, Arc — logos that feel
+        expensive because of restraint, not complexity. Crimson-only palette.
+        Pick a number (1-10) or tell me what direction feels right.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
 
         {/* ═══════════════════════════════════════════
-            OPTION 1 — Monolithic L
-            A single bold, filled geometric "L" with a sharp
-            diagonal cut. Thick, heavy, unmistakable.
+            OPTION 1 — The Aperture
+            A rounded square with a precise circular cutout
+            off-center. Negative space creates tension.
+            Think: camera aperture, focus, precision.
         ═══════════════════════════════════════════ */}
         <div className="bg-surface-elevated rounded-2xl p-8 border border-surface-border">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-gold font-heading font-bold text-sm">OPTION 1</span>
-            <span className="text-cream-muted text-xs">Monolithic L</span>
+            <span className="text-cream-muted text-xs">The Aperture</span>
           </div>
           <p className="text-cream-muted text-xs mb-8">
-            A single bold filled &quot;L&quot; with a sharp 45-degree diagonal cut
-            on the top. Heavy, confident, modern. Reads instantly.
+            Rounded square with a precise circular cutout, slightly off-center.
+            Negative space creates tension. Focus. Precision. The eye of the AI.
           </p>
           <div className="flex items-end gap-8 justify-center mb-8">
-            <svg width="80" height="80" viewBox="0 0 64 64" fill="#8B1A2B" stroke="none">
-              <polygon points="10,4 26,4 26,44 54,44 54,58 10,58" />
-              {/* Diagonal cut on top corner */}
-              <polygon points="10,4 26,4 26,16" fill="#0A0A0A" />
+            <svg width="80" height="80" viewBox="0 0 64 64">
+              <defs>
+                <mask id="a1-80">
+                  <rect width="64" height="64" rx="14" fill="white" />
+                  <circle cx="36" cy="28" r="14" fill="black" />
+                </mask>
+              </defs>
+              <rect width="64" height="64" rx="14" fill="#8B1A2B" mask="url(#a1-80)" />
             </svg>
-            <svg width="48" height="48" viewBox="0 0 64 64" fill="#8B1A2B" stroke="none">
-              <polygon points="10,4 26,4 26,44 54,44 54,58 10,58" />
-              <polygon points="10,4 26,4 26,16" fill="#0A0A0A" />
+            <svg width="48" height="48" viewBox="0 0 64 64">
+              <defs>
+                <mask id="a1-48">
+                  <rect width="64" height="64" rx="14" fill="white" />
+                  <circle cx="36" cy="28" r="14" fill="black" />
+                </mask>
+              </defs>
+              <rect width="64" height="64" rx="14" fill="#8B1A2B" mask="url(#a1-48)" />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 64 64" fill="#8B1A2B" stroke="none">
-              <polygon points="10,4 26,4 26,44 54,44 54,58 10,58" />
-              <polygon points="10,4 26,4 26,16" fill="#0A0A0A" />
+            <svg width="32" height="32" viewBox="0 0 64 64">
+              <defs>
+                <mask id="a1-32">
+                  <rect width="64" height="64" rx="14" fill="white" />
+                  <circle cx="36" cy="28" r="14" fill="black" />
+                </mask>
+              </defs>
+              <rect width="64" height="64" rx="14" fill="#8B1A2B" mask="url(#a1-32)" />
             </svg>
           </div>
           <div className="flex items-center justify-center gap-3 pt-6 border-t border-surface-border">
-            <svg width="24" height="24" viewBox="0 0 64 64" fill="#8B1A2B" stroke="none">
-              <polygon points="10,4 26,4 26,44 54,44 54,58 10,58" />
-              <polygon points="10,4 26,4 26,16" fill="#0A0A0A" />
+            <svg width="24" height="24" viewBox="0 0 64 64">
+              <defs>
+                <mask id="a1-sm">
+                  <rect width="64" height="64" rx="14" fill="white" />
+                  <circle cx="36" cy="28" r="14" fill="black" />
+                </mask>
+              </defs>
+              <rect width="64" height="64" rx="14" fill="#8B1A2B" mask="url(#a1-sm)" />
             </svg>
             <span className="font-heading text-xl font-bold tracking-[0.2em] uppercase text-cream">Lothar AI</span>
           </div>
         </div>
 
         {/* ═══════════════════════════════════════════
-            OPTION 2 — Stacked Blocks
-            Two offset rectangles forming an abstract "L"
-            shape. Brutalist, architectural, premium.
+            OPTION 2 — The Slab
+            A bold, heavy "L" monogram — but not literal.
+            A thick vertical bar meets a horizontal bar at
+            the bottom, with a diagonal bevel where they join.
+            Architectural, brutalist, confident.
         ═══════════════════════════════════════════ */}
         <div className="bg-surface-elevated rounded-2xl p-8 border border-surface-border">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-gold font-heading font-bold text-sm">OPTION 2</span>
-            <span className="text-cream-muted text-xs">Stacked Blocks</span>
+            <span className="text-cream-muted text-xs">The Slab</span>
           </div>
           <p className="text-cream-muted text-xs mb-8">
-            Two offset rectangles forming an abstract arrangement.
-            Brutalist, architectural, like building blocks of a system.
+            Heavy &quot;L&quot; monogram — vertical meets horizontal with a chamfered
+            inner corner. Architectural. Absolute confidence. Zero decoration.
           </p>
           <div className="flex items-end gap-8 justify-center mb-8">
-            <svg width="80" height="80" viewBox="0 0 64 64" fill="none" stroke="none">
-              {/* Tall vertical block */}
-              <rect x="8" y="4" width="20" height="56" rx="2" fill="#8B1A2B" />
-              {/* Short horizontal block, offset */}
-              <rect x="20" y="36" width="36" height="20" rx="2" fill="#A8293D" />
+            <svg width="80" height="80" viewBox="0 0 64 64" fill="#8B1A2B">
+              <path d="M12,4 L28,4 L28,38 L22,44 L52,44 L52,58 L12,58 Z" />
             </svg>
-            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="none">
-              <rect x="8" y="4" width="20" height="56" rx="2" fill="#8B1A2B" />
-              <rect x="20" y="36" width="36" height="20" rx="2" fill="#A8293D" />
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="#8B1A2B">
+              <path d="M12,4 L28,4 L28,38 L22,44 L52,44 L52,58 L12,58 Z" />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="none">
-              <rect x="8" y="4" width="20" height="56" rx="2" fill="#8B1A2B" />
-              <rect x="20" y="36" width="36" height="20" rx="2" fill="#A8293D" />
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="#8B1A2B">
+              <path d="M12,4 L28,4 L28,38 L22,44 L52,44 L52,58 L12,58 Z" />
             </svg>
           </div>
           <div className="flex items-center justify-center gap-3 pt-6 border-t border-surface-border">
-            <svg width="24" height="24" viewBox="0 0 64 64" fill="none" stroke="none">
-              <rect x="8" y="4" width="20" height="56" rx="2" fill="#8B1A2B" />
-              <rect x="20" y="36" width="36" height="20" rx="2" fill="#A8293D" />
+            <svg width="24" height="24" viewBox="0 0 64 64" fill="#8B1A2B">
+              <path d="M12,4 L28,4 L28,38 L22,44 L52,44 L52,58 L12,58 Z" />
             </svg>
             <span className="font-heading text-xl font-bold tracking-[0.2em] uppercase text-cream">Lothar AI</span>
           </div>
         </div>
 
         {/* ═══════════════════════════════════════════
-            OPTION 3 — Abstract Flame
-            A rising flame/torch shape. Energy, ignition,
-            transformation. Filled gradient feel using two tones.
+            OPTION 3 — The Portal
+            Two concentric rounded rectangles with a gap between
+            them. Like looking through a doorway into something else.
+            Depth, transformation, a window into AI.
         ═══════════════════════════════════════════ */}
         <div className="bg-surface-elevated rounded-2xl p-8 border border-surface-border">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-gold font-heading font-bold text-sm">OPTION 3</span>
-            <span className="text-cream-muted text-xs">Abstract Flame</span>
+            <span className="text-cream-muted text-xs">The Portal</span>
           </div>
           <p className="text-cream-muted text-xs mb-8">
-            A rising flame or torch. Two overlapping shapes create depth.
-            Ignition, transformation, the spark that starts everything.
+            Two concentric rounded rectangles with precise spacing between them.
+            A portal. A window into what AI can create. Depth through simplicity.
           </p>
           <div className="flex items-end gap-8 justify-center mb-8">
-            <svg width="80" height="80" viewBox="0 0 64 64" fill="none" stroke="none">
-              {/* Back flame (darker) */}
-              <path d="M32,4 Q46,20 44,36 Q42,50 32,58 Q22,50 20,36 Q18,20 32,4Z" fill="#6B0F1E" />
-              {/* Front flame (lighter, offset) */}
-              <path d="M32,14 Q42,26 40,38 Q38,48 32,54 Q26,48 24,38 Q22,26 32,14Z" fill="#8B1A2B" />
-              {/* Inner bright core */}
-              <path d="M32,28 Q36,34 35,40 Q34,44 32,48 Q30,44 29,40 Q28,34 32,28Z" fill="#C9A84C" />
+            <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
+              <rect x="4" y="4" width="56" height="56" rx="12" stroke="#8B1A2B" strokeWidth="4" />
+              <rect x="16" y="16" width="32" height="32" rx="6" stroke="#8B1A2B" strokeWidth="4" />
             </svg>
-            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="none">
-              <path d="M32,4 Q46,20 44,36 Q42,50 32,58 Q22,50 20,36 Q18,20 32,4Z" fill="#6B0F1E" />
-              <path d="M32,14 Q42,26 40,38 Q38,48 32,54 Q26,48 24,38 Q22,26 32,14Z" fill="#8B1A2B" />
-              <path d="M32,28 Q36,34 35,40 Q34,44 32,48 Q30,44 29,40 Q28,34 32,28Z" fill="#C9A84C" />
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="none">
+              <rect x="4" y="4" width="56" height="56" rx="12" stroke="#8B1A2B" strokeWidth="4.5" />
+              <rect x="16" y="16" width="32" height="32" rx="6" stroke="#8B1A2B" strokeWidth="4.5" />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="none">
-              <path d="M32,4 Q46,20 44,36 Q42,50 32,58 Q22,50 20,36 Q18,20 32,4Z" fill="#6B0F1E" />
-              <path d="M32,14 Q42,26 40,38 Q38,48 32,54 Q26,48 24,38 Q22,26 32,14Z" fill="#8B1A2B" />
-              <path d="M32,28 Q36,34 35,40 Q34,44 32,48 Q30,44 29,40 Q28,34 32,28Z" fill="#C9A84C" />
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="none">
+              <rect x="4" y="4" width="56" height="56" rx="12" stroke="#8B1A2B" strokeWidth="5.5" />
+              <rect x="16" y="16" width="32" height="32" rx="6" stroke="#8B1A2B" strokeWidth="5.5" />
             </svg>
           </div>
           <div className="flex items-center justify-center gap-3 pt-6 border-t border-surface-border">
-            <svg width="24" height="24" viewBox="0 0 64 64" fill="none" stroke="none">
-              <path d="M32,4 Q46,20 44,36 Q42,50 32,58 Q22,50 20,36 Q18,20 32,4Z" fill="#6B0F1E" />
-              <path d="M32,14 Q42,26 40,38 Q38,48 32,54 Q26,48 24,38 Q22,26 32,14Z" fill="#8B1A2B" />
-              <path d="M32,28 Q36,34 35,40 Q34,44 32,48 Q30,44 29,40 Q28,34 32,28Z" fill="#C9A84C" />
+            <svg width="24" height="24" viewBox="0 0 64 64" fill="none">
+              <rect x="4" y="4" width="56" height="56" rx="12" stroke="#8B1A2B" strokeWidth="4.5" />
+              <rect x="16" y="16" width="32" height="32" rx="6" stroke="#8B1A2B" strokeWidth="4.5" />
             </svg>
             <span className="font-heading text-xl font-bold tracking-[0.2em] uppercase text-cream">Lothar AI</span>
           </div>
         </div>
 
         {/* ═══════════════════════════════════════════
-            OPTION 4 — Split Diamond
-            A diamond split down the center with two
-            different tones. Duality, AI + human.
+            OPTION 4 — The Razor
+            A single parallelogram / slanted rectangle.
+            Like a blade. Speed, sharpness, cutting through
+            the noise. Ultra-minimal.
         ═══════════════════════════════════════════ */}
         <div className="bg-surface-elevated rounded-2xl p-8 border border-surface-border">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-gold font-heading font-bold text-sm">OPTION 4</span>
-            <span className="text-cream-muted text-xs">Split Diamond</span>
+            <span className="text-cream-muted text-xs">The Razor</span>
           </div>
           <p className="text-cream-muted text-xs mb-8">
-            A diamond split vertically into two halves. Left dark, right light.
-            Duality of AI and human creativity working together.
+            A single parallelogram. One shape. Slanted, sharp, cutting through noise.
+            Ultra-minimal. Speed personified. Like an italic stroke frozen in place.
           </p>
           <div className="flex items-end gap-8 justify-center mb-8">
-            <svg width="80" height="80" viewBox="0 0 64 64" fill="none" stroke="none">
-              {/* Left half */}
-              <polygon points="32,4 6,32 32,60 32,4" fill="#8B1A2B" />
-              {/* Right half */}
-              <polygon points="32,4 58,32 32,60 32,4" fill="#C9A84C" />
-              {/* Center gap line */}
-              <line x1="32" y1="4" x2="32" y2="60" stroke="#0A0A0A" strokeWidth="2" />
+            <svg width="80" height="80" viewBox="0 0 64 64" fill="#8B1A2B">
+              <polygon points="22,4 52,4 42,60 12,60" />
             </svg>
-            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="32,4 6,32 32,60 32,4" fill="#8B1A2B" />
-              <polygon points="32,4 58,32 32,60 32,4" fill="#C9A84C" />
-              <line x1="32" y1="4" x2="32" y2="60" stroke="#0A0A0A" strokeWidth="2" />
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="#8B1A2B">
+              <polygon points="22,4 52,4 42,60 12,60" />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="32,4 6,32 32,60 32,4" fill="#8B1A2B" />
-              <polygon points="32,4 58,32 32,60 32,4" fill="#C9A84C" />
-              <line x1="32" y1="4" x2="32" y2="60" stroke="#0A0A0A" strokeWidth="2" />
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="#8B1A2B">
+              <polygon points="22,4 52,4 42,60 12,60" />
             </svg>
           </div>
           <div className="flex items-center justify-center gap-3 pt-6 border-t border-surface-border">
-            <svg width="24" height="24" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="32,4 6,32 32,60 32,4" fill="#8B1A2B" />
-              <polygon points="32,4 58,32 32,60 32,4" fill="#C9A84C" />
-              <line x1="32" y1="4" x2="32" y2="60" stroke="#0A0A0A" strokeWidth="2" />
+            <svg width="24" height="24" viewBox="0 0 64 64" fill="#8B1A2B">
+              <polygon points="22,4 52,4 42,60 12,60" />
             </svg>
             <span className="font-heading text-xl font-bold tracking-[0.2em] uppercase text-cream">Lothar AI</span>
           </div>
         </div>
 
         {/* ═══════════════════════════════════════════
-            OPTION 5 — Overlapping Circles
-            Two circles overlapping — like a Venn diagram.
-            The intersection is gold. AI meets brand.
+            OPTION 5 — The Stack
+            Three horizontal bars of decreasing width,
+            perfectly centered. Data layers, AI processing
+            stacks, refined output. Think hamburger menu
+            evolved into a brand mark.
         ═══════════════════════════════════════════ */}
         <div className="bg-surface-elevated rounded-2xl p-8 border border-surface-border">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-gold font-heading font-bold text-sm">OPTION 5</span>
-            <span className="text-cream-muted text-xs">Convergence</span>
+            <span className="text-cream-muted text-xs">The Stack</span>
           </div>
           <p className="text-cream-muted text-xs mb-8">
-            Two circles overlapping. The intersection highlighted in gold.
-            Where AI meets your brand, something new is created.
+            Three horizontal bars, decreasing in width from bottom to top.
+            Layers of refinement. Raw input at the base, perfect output at the peak.
           </p>
           <div className="flex items-end gap-8 justify-center mb-8">
-            <svg width="80" height="80" viewBox="0 0 64 64" fill="none" stroke="none">
-              <circle cx="24" cy="32" r="20" fill="#8B1A2B" opacity="0.9" />
-              <circle cx="40" cy="32" r="20" fill="#8B1A2B" opacity="0.9" />
-              {/* Intersection highlight — approximated lens shape */}
-              <path d="M32,14 A20,20 0 0,1 32,50 A20,20 0 0,1 32,14Z" fill="#C9A84C" />
+            <svg width="80" height="80" viewBox="0 0 64 64" fill="#8B1A2B">
+              <rect x="6" y="44" width="52" height="10" rx="3" />
+              <rect x="14" y="28" width="36" height="10" rx="3" />
+              <rect x="22" y="12" width="20" height="10" rx="3" />
             </svg>
-            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="none">
-              <circle cx="24" cy="32" r="20" fill="#8B1A2B" opacity="0.9" />
-              <circle cx="40" cy="32" r="20" fill="#8B1A2B" opacity="0.9" />
-              <path d="M32,14 A20,20 0 0,1 32,50 A20,20 0 0,1 32,14Z" fill="#C9A84C" />
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="#8B1A2B">
+              <rect x="6" y="44" width="52" height="10" rx="3" />
+              <rect x="14" y="28" width="36" height="10" rx="3" />
+              <rect x="22" y="12" width="20" height="10" rx="3" />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="none">
-              <circle cx="24" cy="32" r="20" fill="#8B1A2B" opacity="0.9" />
-              <circle cx="40" cy="32" r="20" fill="#8B1A2B" opacity="0.9" />
-              <path d="M32,14 A20,20 0 0,1 32,50 A20,20 0 0,1 32,14Z" fill="#C9A84C" />
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="#8B1A2B">
+              <rect x="6" y="44" width="52" height="10" rx="3" />
+              <rect x="14" y="28" width="36" height="10" rx="3" />
+              <rect x="22" y="12" width="20" height="10" rx="3" />
             </svg>
           </div>
           <div className="flex items-center justify-center gap-3 pt-6 border-t border-surface-border">
-            <svg width="28" height="24" viewBox="0 0 64 64" fill="none" stroke="none">
-              <circle cx="24" cy="32" r="20" fill="#8B1A2B" opacity="0.9" />
-              <circle cx="40" cy="32" r="20" fill="#8B1A2B" opacity="0.9" />
-              <path d="M32,14 A20,20 0 0,1 32,50 A20,20 0 0,1 32,14Z" fill="#C9A84C" />
+            <svg width="24" height="24" viewBox="0 0 64 64" fill="#8B1A2B">
+              <rect x="6" y="44" width="52" height="10" rx="3" />
+              <rect x="14" y="28" width="36" height="10" rx="3" />
+              <rect x="22" y="12" width="20" height="10" rx="3" />
             </svg>
             <span className="font-heading text-xl font-bold tracking-[0.2em] uppercase text-cream">Lothar AI</span>
           </div>
         </div>
 
         {/* ═══════════════════════════════════════════
-            OPTION 6 — Rising Arrow
-            An abstract upward arrow/chevron. Growth,
-            performance, conversion. Thick and filled.
+            OPTION 6 — The Spark
+            Two shapes meeting at a point — like a spark
+            gap or lightning caught in a bottle.
+            An angular "<" and ">" pressed together with
+            space between their tips.
         ═══════════════════════════════════════════ */}
         <div className="bg-surface-elevated rounded-2xl p-8 border border-surface-border">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-gold font-heading font-bold text-sm">OPTION 6</span>
-            <span className="text-cream-muted text-xs">Rising Arrow</span>
+            <span className="text-cream-muted text-xs">The Spark</span>
           </div>
           <p className="text-cream-muted text-xs mb-8">
-            A thick upward arrow / chevron. Performance, growth, ads that convert.
-            Clean, filled, impossible to misread. Scale and momentum.
+            Two angular shapes meeting at a gap — like a spark about to fire.
+            The tension between input and output. Energy before the flash.
           </p>
           <div className="flex items-end gap-8 justify-center mb-8">
-            <svg width="80" height="80" viewBox="0 0 64 64" fill="none" stroke="none">
-              {/* Outer arrow shape */}
-              <polygon points="32,4 58,36 46,36 46,60 18,60 18,36 6,36" fill="#8B1A2B" />
-              {/* Inner cutout to make it a chevron/hollow arrow */}
-              <polygon points="32,18 44,36 38,36 38,60 26,60 26,36 20,36" fill="#0A0A0A" />
+            <svg width="80" height="80" viewBox="0 0 64 64" fill="#8B1A2B">
+              {/* Left angle bracket */}
+              <polygon points="6,8 30,32 6,56 18,56 42,32 18,8" />
+              {/* Right angle bracket */}
+              <polygon points="58,8 34,32 58,56 46,56 22,32 46,8" />
+              {/* Cut out center overlap to create the gap */}
+              <rect x="27" y="6" width="10" height="52" fill="#111111" />
             </svg>
-            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="32,4 58,36 46,36 46,60 18,60 18,36 6,36" fill="#8B1A2B" />
-              <polygon points="32,18 44,36 38,36 38,60 26,60 26,36 20,36" fill="#0A0A0A" />
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="#8B1A2B">
+              <polygon points="6,8 30,32 6,56 18,56 42,32 18,8" />
+              <polygon points="58,8 34,32 58,56 46,56 22,32 46,8" />
+              <rect x="27" y="6" width="10" height="52" fill="#111111" />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="32,4 58,36 46,36 46,60 18,60 18,36 6,36" fill="#8B1A2B" />
-              <polygon points="32,18 44,36 38,36 38,60 26,60 26,36 20,36" fill="#0A0A0A" />
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="#8B1A2B">
+              <polygon points="6,8 30,32 6,56 18,56 42,32 18,8" />
+              <polygon points="58,8 34,32 58,56 46,56 22,32 46,8" />
+              <rect x="27" y="6" width="10" height="52" fill="#111111" />
             </svg>
           </div>
           <div className="flex items-center justify-center gap-3 pt-6 border-t border-surface-border">
-            <svg width="24" height="24" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="32,4 58,36 46,36 46,60 18,60 18,36 6,36" fill="#8B1A2B" />
-              <polygon points="32,18 44,36 38,36 38,60 26,60 26,36 20,36" fill="#0A0A0A" />
+            <svg width="28" height="24" viewBox="0 0 64 64" fill="#8B1A2B">
+              <polygon points="6,8 30,32 6,56 18,56 42,32 18,8" />
+              <polygon points="58,8 34,32 58,56 46,56 22,32 46,8" />
+              <rect x="27" y="6" width="10" height="52" fill="#111111" />
             </svg>
             <span className="font-heading text-xl font-bold tracking-[0.2em] uppercase text-cream">Lothar AI</span>
           </div>
         </div>
 
         {/* ═══════════════════════════════════════════
-            OPTION 7 — Neural Prism
-            A triangular prism with light refracting out.
-            AI processing, transformation, output.
+            OPTION 7 — The Signet
+            A circle with a bold vertical line and two
+            short horizontal bars branching from it —
+            like a stylized "L" inside a seal. Monogram
+            meets signet ring. Authority + identity.
         ═══════════════════════════════════════════ */}
         <div className="bg-surface-elevated rounded-2xl p-8 border border-surface-border">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-gold font-heading font-bold text-sm">OPTION 7</span>
-            <span className="text-cream-muted text-xs">Neural Prism</span>
+            <span className="text-cream-muted text-xs">The Signet</span>
           </div>
           <p className="text-cream-muted text-xs mb-8">
-            A triangular prism with beams refracting out the right side.
-            Data goes in, premium ads come out. Transformation through AI.
+            A circle enclosing a geometric &quot;L&quot; form — vertical bar with two
+            horizontal branches. Like a signet ring stamp. Identity. Authority.
           </p>
           <div className="flex items-end gap-8 justify-center mb-8">
-            <svg width="80" height="80" viewBox="0 0 64 64" fill="none" stroke="none">
-              {/* Prism triangle */}
-              <polygon points="10,56 30,6 50,56" fill="#8B1A2B" />
-              {/* Input beam */}
-              <line x1="2" y1="32" x2="24" y2="32" stroke="#F5F0E8" strokeWidth="2" />
-              {/* Output beams (refracted) */}
-              <line x1="40" y1="20" x2="60" y2="12" stroke="#C9A84C" strokeWidth="2" />
-              <line x1="42" y1="32" x2="62" y2="32" stroke="#A8293D" strokeWidth="2" />
-              <line x1="40" y1="44" x2="60" y2="52" stroke="#6B0F1E" strokeWidth="2" />
+            <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="28" stroke="#8B1A2B" strokeWidth="3.5" />
+              {/* Stylized L inside */}
+              <line x1="24" y1="14" x2="24" y2="50" stroke="#8B1A2B" strokeWidth="5" strokeLinecap="round" />
+              <line x1="24" y1="50" x2="44" y2="50" stroke="#8B1A2B" strokeWidth="5" strokeLinecap="round" />
+              <line x1="24" y1="32" x2="38" y2="32" stroke="#8B1A2B" strokeWidth="5" strokeLinecap="round" />
             </svg>
-            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="10,56 30,6 50,56" fill="#8B1A2B" />
-              <line x1="2" y1="32" x2="24" y2="32" stroke="#F5F0E8" strokeWidth="2.5" />
-              <line x1="40" y1="20" x2="60" y2="12" stroke="#C9A84C" strokeWidth="2.5" />
-              <line x1="42" y1="32" x2="62" y2="32" stroke="#A8293D" strokeWidth="2.5" />
-              <line x1="40" y1="44" x2="60" y2="52" stroke="#6B0F1E" strokeWidth="2.5" />
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="28" stroke="#8B1A2B" strokeWidth="4" />
+              <line x1="24" y1="14" x2="24" y2="50" stroke="#8B1A2B" strokeWidth="5.5" strokeLinecap="round" />
+              <line x1="24" y1="50" x2="44" y2="50" stroke="#8B1A2B" strokeWidth="5.5" strokeLinecap="round" />
+              <line x1="24" y1="32" x2="38" y2="32" stroke="#8B1A2B" strokeWidth="5.5" strokeLinecap="round" />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="10,56 30,6 50,56" fill="#8B1A2B" />
-              <line x1="2" y1="32" x2="24" y2="32" stroke="#F5F0E8" strokeWidth="3.5" />
-              <line x1="40" y1="20" x2="60" y2="12" stroke="#C9A84C" strokeWidth="3.5" />
-              <line x1="42" y1="32" x2="62" y2="32" stroke="#A8293D" strokeWidth="3.5" />
-              <line x1="40" y1="44" x2="60" y2="52" stroke="#6B0F1E" strokeWidth="3.5" />
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="28" stroke="#8B1A2B" strokeWidth="5" />
+              <line x1="24" y1="14" x2="24" y2="50" stroke="#8B1A2B" strokeWidth="6" strokeLinecap="round" />
+              <line x1="24" y1="50" x2="44" y2="50" stroke="#8B1A2B" strokeWidth="6" strokeLinecap="round" />
+              <line x1="24" y1="32" x2="38" y2="32" stroke="#8B1A2B" strokeWidth="6" strokeLinecap="round" />
             </svg>
           </div>
           <div className="flex items-center justify-center gap-3 pt-6 border-t border-surface-border">
-            <svg width="24" height="24" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="10,56 30,6 50,56" fill="#8B1A2B" />
-              <line x1="2" y1="32" x2="24" y2="32" stroke="#F5F0E8" strokeWidth="2.5" />
-              <line x1="40" y1="20" x2="60" y2="12" stroke="#C9A84C" strokeWidth="2.5" />
-              <line x1="42" y1="32" x2="62" y2="32" stroke="#A8293D" strokeWidth="2.5" />
-              <line x1="40" y1="44" x2="60" y2="52" stroke="#6B0F1E" strokeWidth="2.5" />
+            <svg width="24" height="24" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="28" stroke="#8B1A2B" strokeWidth="4.5" />
+              <line x1="24" y1="14" x2="24" y2="50" stroke="#8B1A2B" strokeWidth="6" strokeLinecap="round" />
+              <line x1="24" y1="50" x2="44" y2="50" stroke="#8B1A2B" strokeWidth="6" strokeLinecap="round" />
+              <line x1="24" y1="32" x2="38" y2="32" stroke="#8B1A2B" strokeWidth="6" strokeLinecap="round" />
             </svg>
             <span className="font-heading text-xl font-bold tracking-[0.2em] uppercase text-cream">Lothar AI</span>
           </div>
         </div>
 
         {/* ═══════════════════════════════════════════
-            OPTION 8 — Crimson Circle + Gold Slash
-            A solid crimson circle with a bold gold diagonal
-            slash cutting through. Disruption, premium, striking.
+            OPTION 8 — The Cut
+            A solid square with a single diagonal cut
+            removing the top-right corner. One shape,
+            one cut. The Vercel triangle energy but
+            as subtraction, not addition.
         ═══════════════════════════════════════════ */}
         <div className="bg-surface-elevated rounded-2xl p-8 border border-surface-border">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-gold font-heading font-bold text-sm">OPTION 8</span>
-            <span className="text-cream-muted text-xs">Circle + Slash</span>
+            <span className="text-cream-muted text-xs">The Cut</span>
           </div>
           <p className="text-cream-muted text-xs mb-8">
-            A solid crimson circle cut by a bold gold diagonal slash.
-            Simple, striking, disruptive. Impossible to forget.
+            A solid rounded square with its top-right corner sliced off at 45°.
+            One decisive cut. Precision. Everything unnecessary, removed.
           </p>
           <div className="flex items-end gap-8 justify-center mb-8">
-            <svg width="80" height="80" viewBox="0 0 64 64" fill="none" stroke="none">
-              <circle cx="32" cy="32" r="28" fill="#8B1A2B" />
-              <line x1="16" y1="52" x2="48" y2="12" stroke="#C9A84C" strokeWidth="6" strokeLinecap="round" />
+            <svg width="80" height="80" viewBox="0 0 64 64" fill="#8B1A2B">
+              <path d="M8,4 L42,4 L58,20 L58,58 Q58,60 56,60 L8,60 Q6,60 6,58 L6,6 Q6,4 8,4 Z" />
             </svg>
-            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="none">
-              <circle cx="32" cy="32" r="28" fill="#8B1A2B" />
-              <line x1="16" y1="52" x2="48" y2="12" stroke="#C9A84C" strokeWidth="6" strokeLinecap="round" />
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="#8B1A2B">
+              <path d="M8,4 L42,4 L58,20 L58,58 Q58,60 56,60 L8,60 Q6,60 6,58 L6,6 Q6,4 8,4 Z" />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="none">
-              <circle cx="32" cy="32" r="28" fill="#8B1A2B" />
-              <line x1="16" y1="52" x2="48" y2="12" stroke="#C9A84C" strokeWidth="7" strokeLinecap="round" />
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="#8B1A2B">
+              <path d="M8,4 L42,4 L58,20 L58,58 Q58,60 56,60 L8,60 Q6,60 6,58 L6,6 Q6,4 8,4 Z" />
             </svg>
           </div>
           <div className="flex items-center justify-center gap-3 pt-6 border-t border-surface-border">
-            <svg width="24" height="24" viewBox="0 0 64 64" fill="none" stroke="none">
-              <circle cx="32" cy="32" r="28" fill="#8B1A2B" />
-              <line x1="16" y1="52" x2="48" y2="12" stroke="#C9A84C" strokeWidth="6" strokeLinecap="round" />
+            <svg width="24" height="24" viewBox="0 0 64 64" fill="#8B1A2B">
+              <path d="M8,4 L42,4 L58,20 L58,58 Q58,60 56,60 L8,60 Q6,60 6,58 L6,6 Q6,4 8,4 Z" />
             </svg>
             <span className="font-heading text-xl font-bold tracking-[0.2em] uppercase text-cream">Lothar AI</span>
           </div>
         </div>
 
         {/* ═══════════════════════════════════════════
-            OPTION 9 — Triple Chevron Stack
-            Three stacked chevrons pointing right.
-            Speed, iteration, forward motion. Like >>> on steroids.
+            OPTION 9 — The Orbit
+            A solid circle with a tilted ring / orbital
+            path around it. The circle is the product,
+            the orbit is the AI working around it.
+            Planet + ring. Clean, dynamic.
         ═══════════════════════════════════════════ */}
         <div className="bg-surface-elevated rounded-2xl p-8 border border-surface-border">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-gold font-heading font-bold text-sm">OPTION 9</span>
-            <span className="text-cream-muted text-xs">Triple Chevron</span>
+            <span className="text-cream-muted text-xs">The Orbit</span>
           </div>
           <p className="text-cream-muted text-xs mb-8">
-            Three stacked chevrons pointing right, each getting brighter.
-            Acceleration, iteration, relentless forward motion.
+            A solid circle (your product) with a tilted elliptical ring orbiting it.
+            AI revolves around and enhances your brand. Dynamic. Elegant.
           </p>
           <div className="flex items-end gap-8 justify-center mb-8">
-            <svg width="80" height="80" viewBox="0 0 64 64" fill="none" stroke="none">
-              {/* Back chevron (darkest) */}
-              <polygon points="4,8 28,32 4,56 14,56 38,32 14,8" fill="#6B0F1E" />
-              {/* Middle chevron */}
-              <polygon points="16,8 40,32 16,56 26,56 50,32 26,8" fill="#8B1A2B" />
-              {/* Front chevron (brightest) */}
-              <polygon points="28,8 52,32 28,56 38,56 62,32 38,8" fill="#A8293D" />
+            <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
+              {/* Orbital ring behind */}
+              <ellipse cx="32" cy="32" rx="28" ry="12" transform="rotate(-30 32 32)" stroke="#8B1A2B" strokeWidth="3" />
+              {/* Center sphere */}
+              <circle cx="32" cy="32" r="12" fill="#8B1A2B" />
             </svg>
-            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="4,8 28,32 4,56 14,56 38,32 14,8" fill="#6B0F1E" />
-              <polygon points="16,8 40,32 16,56 26,56 50,32 26,8" fill="#8B1A2B" />
-              <polygon points="28,8 52,32 28,56 38,56 62,32 38,8" fill="#A8293D" />
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="none">
+              <ellipse cx="32" cy="32" rx="28" ry="12" transform="rotate(-30 32 32)" stroke="#8B1A2B" strokeWidth="3.5" />
+              <circle cx="32" cy="32" r="12" fill="#8B1A2B" />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="4,8 28,32 4,56 14,56 38,32 14,8" fill="#6B0F1E" />
-              <polygon points="16,8 40,32 16,56 26,56 50,32 26,8" fill="#8B1A2B" />
-              <polygon points="28,8 52,32 28,56 38,56 62,32 38,8" fill="#A8293D" />
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="none">
+              <ellipse cx="32" cy="32" rx="28" ry="12" transform="rotate(-30 32 32)" stroke="#8B1A2B" strokeWidth="4.5" />
+              <circle cx="32" cy="32" r="12" fill="#8B1A2B" />
             </svg>
           </div>
           <div className="flex items-center justify-center gap-3 pt-6 border-t border-surface-border">
-            <svg width="28" height="24" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="4,8 28,32 4,56 14,56 38,32 14,8" fill="#6B0F1E" />
-              <polygon points="16,8 40,32 16,56 26,56 50,32 26,8" fill="#8B1A2B" />
-              <polygon points="28,8 52,32 28,56 38,56 62,32 38,8" fill="#A8293D" />
+            <svg width="28" height="24" viewBox="0 0 64 64" fill="none">
+              <ellipse cx="32" cy="32" rx="28" ry="12" transform="rotate(-30 32 32)" stroke="#8B1A2B" strokeWidth="3.5" />
+              <circle cx="32" cy="32" r="12" fill="#8B1A2B" />
             </svg>
             <span className="font-heading text-xl font-bold tracking-[0.2em] uppercase text-cream">Lothar AI</span>
           </div>
         </div>
 
         {/* ═══════════════════════════════════════════
-            OPTION 10 — Crimson Crown
-            A minimalist 3-point crown. Premium, authority,
-            the king of ad generation. Thick filled shape.
+            OPTION 10 — The Notch
+            A solid rounded square with a small square
+            notch cut from one corner. Like a SIM card
+            or a chip. Subtle, techy, instantly recognizable.
+            The detail IS the logo.
         ═══════════════════════════════════════════ */}
         <div className="bg-surface-elevated rounded-2xl p-8 border border-surface-border">
           <div className="flex items-center gap-3 mb-2">
             <span className="text-gold font-heading font-bold text-sm">OPTION 10</span>
-            <span className="text-cream-muted text-xs">Crimson Crown</span>
+            <span className="text-cream-muted text-xs">The Notch</span>
           </div>
           <p className="text-cream-muted text-xs mb-8">
-            A minimalist three-point crown. Premium, authoritative, king of the game.
-            Simple enough for a favicon, bold enough for a billboard.
+            A rounded square with a small square notch removed from one corner.
+            Like a chip or SIM card. Tiny detail, total identity. Tech DNA.
           </p>
           <div className="flex items-end gap-8 justify-center mb-8">
-            <svg width="80" height="80" viewBox="0 0 64 64" fill="none" stroke="none">
-              {/* Crown body */}
-              <polygon points="6,50 6,22 20,34 32,12 44,34 58,22 58,50" fill="#8B1A2B" />
-              {/* Gold band at base */}
-              <rect x="6" y="50" width="52" height="6" rx="1" fill="#C9A84C" />
-              {/* Crown point gems */}
-              <circle cx="6" cy="22" r="3" fill="#C9A84C" />
-              <circle cx="32" cy="12" r="3" fill="#C9A84C" />
-              <circle cx="58" cy="22" r="3" fill="#C9A84C" />
+            <svg width="80" height="80" viewBox="0 0 64 64" fill="#8B1A2B">
+              <path d="M10,4 L54,4 Q60,4 60,10 L60,54 Q60,60 54,60 L10,60 Q4,60 4,54 L4,22 L16,22 L16,10 Q16,4 22,4 Z" />
             </svg>
-            <svg width="48" height="48" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="6,50 6,22 20,34 32,12 44,34 58,22 58,50" fill="#8B1A2B" />
-              <rect x="6" y="50" width="52" height="6" rx="1" fill="#C9A84C" />
-              <circle cx="6" cy="22" r="3" fill="#C9A84C" />
-              <circle cx="32" cy="12" r="3" fill="#C9A84C" />
-              <circle cx="58" cy="22" r="3" fill="#C9A84C" />
+            <svg width="48" height="48" viewBox="0 0 64 64" fill="#8B1A2B">
+              <path d="M10,4 L54,4 Q60,4 60,10 L60,54 Q60,60 54,60 L10,60 Q4,60 4,54 L4,22 L16,22 L16,10 Q16,4 22,4 Z" />
             </svg>
-            <svg width="32" height="32" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="6,50 6,22 20,34 32,12 44,34 58,22 58,50" fill="#8B1A2B" />
-              <rect x="6" y="50" width="52" height="6" rx="1" fill="#C9A84C" />
-              <circle cx="6" cy="22" r="3.5" fill="#C9A84C" />
-              <circle cx="32" cy="12" r="3.5" fill="#C9A84C" />
-              <circle cx="58" cy="22" r="3.5" fill="#C9A84C" />
+            <svg width="32" height="32" viewBox="0 0 64 64" fill="#8B1A2B">
+              <path d="M10,4 L54,4 Q60,4 60,10 L60,54 Q60,60 54,60 L10,60 Q4,60 4,54 L4,22 L16,22 L16,10 Q16,4 22,4 Z" />
             </svg>
           </div>
           <div className="flex items-center justify-center gap-3 pt-6 border-t border-surface-border">
-            <svg width="28" height="24" viewBox="0 0 64 64" fill="none" stroke="none">
-              <polygon points="6,50 6,22 20,34 32,12 44,34 58,22 58,50" fill="#8B1A2B" />
-              <rect x="6" y="50" width="52" height="6" rx="1" fill="#C9A84C" />
-              <circle cx="6" cy="22" r="3" fill="#C9A84C" />
-              <circle cx="32" cy="12" r="3" fill="#C9A84C" />
-              <circle cx="58" cy="22" r="3" fill="#C9A84C" />
+            <svg width="24" height="24" viewBox="0 0 64 64" fill="#8B1A2B">
+              <path d="M10,4 L54,4 Q60,4 60,10 L60,54 Q60,60 54,60 L10,60 Q4,60 4,54 L4,22 L16,22 L16,10 Q16,4 22,4 Z" />
             </svg>
             <span className="font-heading text-xl font-bold tracking-[0.2em] uppercase text-cream">Lothar AI</span>
           </div>
         </div>
+
       </div>
     </div>
   );

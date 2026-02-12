@@ -3,7 +3,7 @@
 import { SectionWrapper } from "../ui/SectionWrapper";
 import { FadeInUp } from "../animations/FadeInUp";
 import { Button } from "../ui/Button";
-import { DEMO_CONTENT, CALENDLY_URL } from "@/lib/constants";
+import { DEMO_CONTENT, CALENDLY_URL, CONTACT_EMAIL } from "@/lib/constants";
 
 export function BookDemo() {
   return (
@@ -22,7 +22,7 @@ export function BookDemo() {
         </FadeInUp>
 
         <FadeInUp delay={0.2}>
-          <div className="mt-10">
+          <div className="mt-10 flex flex-col items-center gap-6">
             <Button
               variant="primary"
               size="lg"
@@ -31,6 +31,15 @@ export function BookDemo() {
             >
               Book a Call
             </Button>
+            <p className="text-cream-muted text-sm">
+              Or reach out directly at{" "}
+              <a
+                href={`mailto:${CONTACT_EMAIL}`}
+                className="text-cream hover:text-gold transition-colors underline underline-offset-4"
+              >
+                {CONTACT_EMAIL}
+              </a>
+            </p>
           </div>
         </FadeInUp>
       </div>
