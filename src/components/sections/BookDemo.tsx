@@ -29,11 +29,8 @@ export function BookDemo() {
               href={CALENDLY_URL}
               className="shadow-[0_0_40px_rgba(139,26,43,0.3)]"
             >
-              Book Your Demo
+              Book a Call
             </Button>
-            <p className="mt-4 text-cream-muted text-sm">
-              15 minutes. We&apos;ll generate real ads for your brand — live.
-            </p>
           </div>
         </FadeInUp>
       </div>

@@ -41,11 +41,11 @@ export function Problem() {
         </h2>
       </FadeInUp>
 
-      <StaggerChildren className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <StaggerChildren className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
         {PROBLEM_CONTENT.cards.map((card, i) => (
           <div
             key={card.title}
-            className="bg-surface/60 backdrop-blur-sm rounded-xl p-8 border border-surface-border"
+            className="bg-surface/60 backdrop-blur-sm rounded-xl p-8 border border-surface-border flex flex-col min-h-[280px]"
           >
             <div className="text-crimson-light mb-6">{icons[i]}</div>
             <div className="text-3xl md:text-4xl font-heading font-bold text-cream mb-2">
@@ -54,7 +54,7 @@ export function Problem() {
             <div className="text-sm font-heading font-medium uppercase tracking-wider text-gold mb-4">
               {card.title}
             </div>
-            <p className="text-cream-muted leading-relaxed text-sm">
+            <p className="text-cream-muted leading-relaxed text-sm flex-1">
               {card.description}
             </p>
           </div>

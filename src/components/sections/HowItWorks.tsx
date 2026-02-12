@@ -10,17 +10,17 @@ export function HowItWorks() {
     <SectionWrapper id="how-it-works" className="bg-surface-elevated">
       <FadeInUp>
         <p className="text-gold text-xs font-heading font-medium uppercase tracking-widest mb-4">
-          PROCESS
+          HOW IT WORKS
         </p>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight max-w-3xl">
-          From Brief to Billboard in Minutes
+          A Partnership, Not a Platform
         </h2>
       </FadeInUp>
 
       <StaggerChildren className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8">
         {STEPS.map((step, i) => (
           <div key={step.number} className="relative">
-            {/* Connector line (hidden on mobile, visible on desktop between items) */}
+            {/* Connector line */}
             {i < STEPS.length - 1 && (
               <div className="hidden md:block absolute top-6 left-[calc(50%+24px)] w-[calc(100%-48px)] h-px bg-gradient-to-r from-crimson/40 to-crimson/10" />
             )}

@@ -4,9 +4,14 @@ export const HERO_CONTENT = {
   badge: "AI-Powered Ad Generation",
   headline: "Static Ads That Convert.\nBuilt by AI.\nPerfected for Supplements.",
   subheadline:
-    "Choose from 15 proven psychological frameworks or describe any scene you imagine. Your real product, brand-accurate, in every ad. Generated in minutes — not weeks.",
+    "Tailor-made ad generation built around your brand. Proven psychological frameworks, fully customizable prompts, and 100% product fidelity — every time.",
   ctaPrimary: "Book a Demo",
   ctaSecondary: "See How It Works",
+  cards: [
+    { label: "High-Converting Frameworks", icon: "frameworks" },
+    { label: "Custom Prompting", icon: "prompts" },
+    { label: "100% Product Fidelity", icon: "fidelity" },
+  ],
 };
 
 export const PROBLEM_CONTENT = {
@@ -36,27 +41,27 @@ export const PROBLEM_CONTENT = {
 
 export const FEATURES = [
   {
-    title: "15 Proven Frameworks + Unlimited Custom Scenes",
+    title: "Proven Psychological Frameworks",
     description:
-      "Social proof. Scientific authority. Objection crusher. Choose from 15 battle-tested psychological frameworks — or describe any scene you imagine. Your product in space, on a mountain, in a lab. Nothing is locked.",
+      "Social proof. Scientific authority. Objection crusher. Every ad is built on battle-tested advertising frameworks engineered to convert — not creative guesswork.",
     icon: "frameworks",
   },
   {
-    title: "Your Real Product. Every Time.",
+    title: "Fully Customizable Prompts",
     description:
-      "Upload a reference photo and our AI reproduces your exact bottle, label, and branding in every ad. Not an approximation — your actual product, naturally integrated into every scene.",
+      "Describe any scene you imagine — your product in space, on a mountain, in a lab. You have complete creative freedom to craft any ad concept. Nothing is locked or templated.",
+    icon: "prompts",
+  },
+  {
+    title: "100% Product Fidelity",
+    description:
+      "Your exact bottle, label, and branding reproduced with precision in every ad. Not an approximation — your actual product, naturally integrated into every scene.",
     icon: "product",
   },
   {
-    title: "White-Label Ready",
+    title: "2K Production-Ready Output",
     description:
-      "One platform, infinite brands. Every client gets a fully personalized experience — their colors, their product, their frameworks. Zero code changes required.",
-    icon: "whitelabel",
-  },
-  {
-    title: "2K Production-Ready Ads",
-    description:
-      "Every ad is generated at 2048x2048 resolution with optimized composition, typography, and layout. Download and deploy directly to Meta, Google, or any ad platform.",
+      "Every ad is generated at 2048x2048 resolution with optimized composition, typography, and layout. Ready to deploy directly to Meta, Google, TikTok, or any ad platform.",
     icon: "resolution",
   },
 ];
@@ -64,39 +69,51 @@ export const FEATURES = [
 export const STEPS = [
   {
     number: 1,
-    title: "Upload Your Brand",
+    title: "We Learn Your Brand",
     description:
-      "Add your product reference photo, brand colors, and guidelines. The AI learns your visual identity.",
+      "We work with you to understand your product, packaging, brand guidelines, and visual identity inside and out.",
   },
   {
     number: 2,
-    title: "Choose Your Approach",
+    title: "Build Your Custom System",
     description:
-      "Select from 15 proven psychological frameworks, describe a custom scene, or let the AI recommend the best angles for your product.",
+      "We build a tailor-made ad generation tool calibrated specifically for your brand — your colors, your product, your voice.",
   },
   {
     number: 3,
-    title: "Generate Ads",
+    title: "Generate & Iterate",
     description:
-      "Our AI creates production-ready static ads with your real product, optimized copy, and conversion-focused layouts. In minutes.",
+      "Your system produces high-fidelity, conversion-ready static ads using proven frameworks and custom scenes. We refine together until every detail is right.",
   },
   {
     number: 4,
     title: "Deploy & Scale",
     description:
-      "Download your 2K resolution ads and deploy them directly to any ad platform. Test multiple angles simultaneously and scale what converts.",
+      "Launch your 2K resolution ads across any platform. Test multiple angles, scale what converts, and keep generating fresh creatives on demand.",
   },
 ];
 
-export const STATS = [
-  { value: 0.5, prefix: "~$", suffix: "", label: "Total cost per 15-ad set" },
-  { value: 15, prefix: "", suffix: "", label: "Psychological frameworks" },
-  { value: 2048, prefix: "", suffix: "px", label: "Production-ready resolution" },
+export const DIFFERENTIATORS = [
+  {
+    title: "Tailor-Made for Your Brand",
+    description:
+      "This isn't a generic tool — every system is custom-built around your product, your packaging, and your visual identity. 100% brand accuracy, guaranteed.",
+  },
+  {
+    title: "We Work Hand in Hand",
+    description:
+      "You're not left alone with a dashboard. We partner with you to calibrate, refine, and perfect every aspect of your ad generation until it's exactly right.",
+  },
+  {
+    title: "Built on Proven Psychology",
+    description:
+      "Every ad is backed by battle-tested psychological frameworks — social proof, scientific authority, objection crushing — not guesswork or trends.",
+  },
 ];
 
 export const DEMO_CONTENT = {
   label: "GET STARTED",
   heading: "See Lothar AI in Action",
   subheading:
-    "Book a 15-minute demo and we'll generate real ads for your brand — live.",
+    "Book a call and discover how a tailor-made ad generation system can transform your brand's creative output.",
 };
