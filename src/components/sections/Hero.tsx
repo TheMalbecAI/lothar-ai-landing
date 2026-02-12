@@ -80,10 +80,10 @@ export function Hero() {
         <FadeInUp delay={0.8}>
           <motion.div
             style={{ scale: cardScale, opacity: cardOpacity }}
-            className="mt-20 mb-40 flex items-center justify-center"
+            className="mt-20 mb-40 flex items-center justify-center gap-3 md:gap-5"
           >
-            {/* Left card — tilted left, tucked behind center */}
-            <div className="w-52 h-52 md:w-72 md:h-72 rounded-2xl bg-surface-elevated border border-crimson/20 -rotate-6 flex flex-col items-center justify-center -mr-8 md:-mr-12 transition-all duration-500 hover:border-crimson/40 hover:shadow-[0_0_40px_rgba(139,26,43,0.15)]">
+            {/* Left card — tilted left */}
+            <div className="w-52 h-52 md:w-72 md:h-72 rounded-2xl bg-surface-elevated border border-crimson/20 -rotate-6 flex flex-col items-center justify-center transition-all duration-500 hover:border-crimson/40 hover:shadow-[0_0_40px_rgba(139,26,43,0.15)]">
               <div className="text-crimson-light mb-4">
                 {cardIcons[HERO_CONTENT.cards[0].icon]}
               </div>
@@ -102,8 +102,8 @@ export function Hero() {
               </span>
             </div>
 
-            {/* Right card — tilted right, tucked behind center */}
-            <div className="w-52 h-52 md:w-72 md:h-72 rounded-2xl bg-surface-elevated border border-crimson/20 rotate-6 flex flex-col items-center justify-center -ml-8 md:-ml-12 transition-all duration-500 hover:border-crimson/40 hover:shadow-[0_0_40px_rgba(139,26,43,0.15)]">
+            {/* Right card — tilted right */}
+            <div className="w-52 h-52 md:w-72 md:h-72 rounded-2xl bg-surface-elevated border border-crimson/20 rotate-6 flex flex-col items-center justify-center transition-all duration-500 hover:border-crimson/40 hover:shadow-[0_0_40px_rgba(139,26,43,0.15)]">
               <div className="text-crimson-light mb-4">
                 {cardIcons[HERO_CONTENT.cards[2].icon]}
               </div>
