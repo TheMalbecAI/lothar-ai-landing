@@ -1,13 +1,12 @@
 "use client";
 
-import { SectionWrapper } from "../ui/SectionWrapper";
 import { FadeInUp } from "../animations/FadeInUp";
 import { Button } from "../ui/Button";
 import { DEMO_CONTENT, CALENDLY_URL, CONTACT_EMAIL } from "@/lib/constants";
 
 export function BookDemo() {
   return (
-    <SectionWrapper id="book-demo">
+    <section id="book-demo" className="min-h-screen flex items-center justify-center px-6">
       <div className="text-center max-w-2xl mx-auto">
         <FadeInUp>
           <p className="text-gold text-xs font-heading font-medium uppercase tracking-widest mb-4">
@@ -43,6 +42,6 @@ export function BookDemo() {
           </div>
         </FadeInUp>
       </div>
-    </SectionWrapper>
+    </section>
   );
 }
