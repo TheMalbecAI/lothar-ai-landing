@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Lothar AI — AI-Powered Ad Generation for Supplement Brands";
+export const alt = "Lothar AI — AI-Powered Ad Generation for Product Brands";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -78,7 +78,7 @@ export default async function Image() {
             textAlign: "center",
           }}
         >
-          AI-Powered Ad Generation for Supplement Brands
+          AI-Powered Ad Generation for Product Brands
         </div>
 
         {/* Gold accent line */}

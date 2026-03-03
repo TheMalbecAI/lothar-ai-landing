@@ -19,27 +19,29 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://lotharai.com"),
   title: {
-    default: "Lothar AI | AI-Powered Ad Generation for Supplement Brands",
+    default: "Lothar AI | AI-Powered Ad Generation for Product Brands",
     template: "%s | Lothar AI",
   },
   description:
-    "Generate brand-accurate, high-converting static ads in minutes. 15 proven psychological frameworks plus unlimited custom scenes. Your real product in every ad.",
+    "Generate brand-accurate, high-converting static ads in minutes. Proven psychological frameworks, unlimited custom scenes, and 99%+ product fidelity. Custom-built for your brand.",
   keywords: [
     "AI ad generation",
-    "supplement brand ads",
+    "product brand ads",
     "static ad creation",
     "AI advertising",
-    "supplement marketing",
+    "DTC brand marketing",
     "automated ad design",
     "product photography AI",
     "advertising frameworks",
-    "white label ad platform",
-    "DTC supplement ads",
+    "supplement brand ads",
+    "skincare brand ads",
+    "CPG advertising",
+    "custom AI ad platform",
   ],
   openGraph: {
-    title: "Lothar AI | AI-Powered Ad Generation for Supplement Brands",
+    title: "Lothar AI | AI-Powered Ad Generation for Product Brands",
     description:
-      "Generate brand-accurate, high-converting static ads in minutes. 15 proven psychological frameworks plus unlimited custom scenes.",
+      "Generate brand-accurate, high-converting static ads in minutes. Proven psychological frameworks plus unlimited custom scenes. Custom-built for your brand.",
     url: "https://lotharai.com",
     siteName: "Lothar AI",
     images: [
@@ -55,9 +57,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lothar AI | AI-Powered Ad Generation for Supplement Brands",
+    title: "Lothar AI | AI-Powered Ad Generation for Product Brands",
     description:
-      "Generate brand-accurate, high-converting static ads in minutes. 15 proven frameworks plus unlimited custom scenes.",
+      "Generate brand-accurate, high-converting static ads in minutes. Proven frameworks plus unlimited custom scenes. Custom-built for your brand.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -83,7 +85,7 @@ export default function RootLayout({
               name: "Lothar AI",
               url: "https://lotharai.com",
               description:
-                "AI-powered ad generation platform for supplement brands",
+                "AI-powered ad generation platform for product brands",
               logo: "https://lotharai.com/og-image.png",
             }),
           }}

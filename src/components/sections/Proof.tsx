@@ -3,6 +3,7 @@
 import { SectionWrapper } from "../ui/SectionWrapper";
 import { FadeInUp } from "../animations/FadeInUp";
 import { StaggerChildren } from "../animations/StaggerChildren";
+import { Badge } from "../ui/Badge";
 import { DIFFERENTIATORS } from "@/lib/constants";
 
 const diffIcons = [
@@ -31,31 +32,40 @@ export function Proof() {
     <SectionWrapper className="bg-crimson-subtle">
       <FadeInUp>
         <p className="text-gold text-xs font-heading font-medium uppercase tracking-widest mb-4 text-center">
-          WHY LOTHAR AI
+          THE LOTHAR AI DIFFERENCE
         </p>
         <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-center max-w-3xl mx-auto">
-          Not a Generic Tool. A Custom-Built Weapon.
+          Not a Generic Tool. A Custom-Built System.
         </h2>
+        <p className="mt-4 text-cream-muted text-center text-lg max-w-2xl mx-auto">
+          Your brand deserves more than templates and shared platforms. Every Lothar AI deployment is built specifically for you.
+        </p>
       </FadeInUp>
 
-      <StaggerChildren className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <StaggerChildren className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 auto-rows-fr">
         {DIFFERENTIATORS.map((diff, i) => (
-          <div
-            key={diff.title}
-            className="bg-surface/60 backdrop-blur-sm rounded-xl p-8 border border-surface-border flex flex-col min-h-[240px] text-center"
-          >
-            <div className="text-crimson-light mb-6 flex justify-center">
-              {diffIcons[i]}
+          <div key={diff.title} className="h-full">
+            <div className="bg-surface/60 backdrop-blur-sm rounded-xl p-8 border border-surface-border flex flex-col h-full text-center">
+              <div className="text-crimson-light mb-6 flex justify-center">
+                {diffIcons[i]}
+              </div>
+              <h3 className="text-lg font-heading font-semibold mb-3">
+                {diff.title}
+              </h3>
+              <p className="text-cream-muted leading-relaxed text-sm flex-1">
+                {diff.description}
+              </p>
             </div>
-            <h3 className="text-lg font-heading font-semibold mb-3">
-              {diff.title}
-            </h3>
-            <p className="text-cream-muted leading-relaxed text-sm flex-1">
-              {diff.description}
-            </p>
           </div>
         ))}
       </StaggerChildren>
+
+      {/* Founding client note */}
+      <FadeInUp delay={0.3}>
+        <div className="mt-12 text-center">
+          <Badge className="text-gold/80">Currently Onboarding Founding Clients</Badge>
+        </div>
+      </FadeInUp>
     </SectionWrapper>
   );
 }
